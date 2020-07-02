@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{% block title %} Buscar Noticias {% endblock %}</h1>
+       <form action="{{ url_for('send') }}" method="post">
+        <tbody>
+           <tr>
+          <th><input type="text" name="buscar" value={{ buscar }} ></th>
+          <th><input type="submit" name="button" class="btn btn-success" value="send"></a></th>
+          </tr>
+        </tbody>
+    </form>
+
+{% endblock %}

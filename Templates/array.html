@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Links {% endblock %}</h1>
+<div class="container-fluid">
+    {% for array in arrays %}
+        <div class="row">
+            <div class="col-xs-12">
+                <p>{{array}}</p>
+            </div>
+        </div>
+    {% endfor %}
+    <div class="row">
+            <div class="col-xs-12">
+                <p>{{titulo}}</p>
+            </div>
+        </div>
+</div>
+{% endblock %}
